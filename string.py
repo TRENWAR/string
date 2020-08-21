@@ -11,16 +11,51 @@ green  = '\033[92m'
 pink   = '\033[95m'
 red    = '\033[91m'
 
-    
-    
-    
-    
+
+
+# def lenInPython()
+def lenInPython():
+    print("The len() function returns the number of items in an object")
+    sleep(0.5)
+    print("When the object is a string, the len() function returns the number of characters in the string")
+    user = input("Want to try it Y/n: ")
+    if user == "Y":
+        print("Type something")
+        user = input("~~> ")
+        calculate_typed_users = len(user)
+        sleep(0.4)
+        print(calculate_typed_users)
+        print(f"the characters you type are {calculate_typed_users} characters")
+        sleep(0.4)
+        print("spaces are also counted")
+        
+    elif user == "n":
+        print("oke")
+        sleep(0.6)
+        mainMenu()
+        
+        
+        
+        
+        
 # def mainMenu
 def mainMenu():
     os.system("clear")
+    sleep(0.3)
     print(10*"="+"Welcome"+10*"=")
     print("Welcome to this tools\r\nThis tools can manipulate string (using Python)")
+    print("1.Use len()")
+    user = input("~~> ")
+    if user == "1":
+        lenInPython()
+    else:
+        os.system("exit")
     
+    
+    
+    
+    
+
     
     
     
@@ -35,7 +70,7 @@ def chooseColor():
     
     if user == "1":
         print(white+"Nice, this is what i've been waiting for 20 years...Nice :)")
-        sleep(1.7)
+        sleep(0.8)
         mainMenu()
         
         
@@ -82,14 +117,8 @@ def chooseColor():
         
         
 
-# def mainMenu
-def mainMenu():
-    os.system("clear")
-    print(8*"="+"Welcome"+8*"=")
-    print("Welcome to this tools\r\nThis tools can manipulate string (using Python)")
 
 
 
 
 chooseColor()
-# Beta version 
